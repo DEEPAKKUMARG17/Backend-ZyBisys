@@ -55,8 +55,8 @@ app.listen(8000, (req, res, next) => {
 
 
 //db.Listing.find({property_type:"House"}).limit(2)
-// db.Listing.find({price:{$gt:500}},{listing_url:1,name:1,host.host_name:1,host.host_location:1,reviewer:1,price:1}).limit(2)
+//db.Listing.find({price:{$gt:500}},{"listing_url":1,"name":1,"host.host_name":1,"host.host_location":1,"reviews.reviewer_name":1,price:1}).limit(2)
 
-//db.Listing.find({price:{$gt:600,$lt:800}}).limit(2)
+//db.Listing.find({price:{$gt:600,$lt:900}}).limit(2)
 
 //db.Listing.find({$and:[{"address.country":"Brazil"},{"review_scores.review_scores_rating":{$gt:9}}]}).limit(2)
